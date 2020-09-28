@@ -3,12 +3,10 @@
 @section('content')
 <div class="row">
     <div class="col col-login mx-auto">
+        <div class="text-center mb-6">
+            <img src="" class="h-7" alt="">
+        </div>
         <div class="card">
-            <div class="card-header">
-                <div class="text-center mb-6">
-                    <img src="" class="h-7" alt="">
-                </div>
-            </div>
             <div class="card-body">
                 {!! Form::open(['route' => 'login', 'method' => 'POST']) !!}
                     {{ Form::token() }}
